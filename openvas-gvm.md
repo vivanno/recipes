@@ -54,7 +54,7 @@ Now you are able to access the admin page using: https://127.0.0.1:9332
  
  sudo runuser -u _gvm -- gvmd –create-user=vivanno –password=blabla
   
-# Failed to find config ‘daba56c8-73ec-11df-a475-002264764cea’g 
+# Failed to find config ‘daba56c8-73ec-11df-a475-002264764cea’
 
  sudo runuser -u _gvm -- gvmd --get-users --verbose
  
