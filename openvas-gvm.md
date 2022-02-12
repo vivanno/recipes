@@ -25,6 +25,10 @@ Here is a list of commands to install GVM on Kali Linux 2021.
 # Verifying the setup
 
 sudo gvm-check-setup 
+ 
+# Stop gvm
+
+sudo gvm-stop 
 
 # Starting the setup
 
