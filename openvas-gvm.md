@@ -56,13 +56,17 @@ Now you are able to access the admin page using: https://127.0.0.1:9332
   
 # Failed to find config ‘daba56c8-73ec-11df-a475-002264764cea’
 
+ sudo runuser -u _gvm -- greenbone-nvt-sync
+ 
  sudo runuser -u _gvm -- gvmd --get-users --verbose
  
- sudo runuser -u _gvm -- gvmd --modify-setting 78eceaec-3385-11ea-b237-28d24461215b --value <USER-UUID>
+ sudo runuser -u _gvm -- gvmd --modify-setting 78eceaec-3385-11ea-b237-28d24461215b --value <USER-UID>
  
  sudo runuser -u _gvm -- gvmd --get-scanners
  
- sudo runuser -u _gvm -- gvmd --modify-scanner 08b69003-5fc2-4037-a479-93b440211c73 --scanner-host=/run/ospd/ospd.sock
+ sudo runuser -u _gvm -- gvmd --modify-scanner <SCANNER-UID> --value <USER-UID>
+ 
+ sudo runuser -u _gvm -- gvmd --modify-scanner <SCANNER-UID> --scanner-host=/run/ospd/ospd.sock
 
  # init_openvas: Can not open or create log file or directory. Please check permissions of log files listed in /etc/openvas/openvas_log.conf
  
