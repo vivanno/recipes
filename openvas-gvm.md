@@ -59,3 +59,7 @@ Now you are able to access the admin page using: https://127.0.0.1:9332
  sudo runuser -u _gvm -- gvmd --modify-setting 08b69003-5fc2-4037-a479-93b440211c73 --value 68988e70-bae3-4033-b576-8022df146863
  
  sudo runuser -u _gvm -- gvmd --modify-scanner 08b69003-5fc2-4037-a479-93b440211c73 --scanner-host=/run/ospd/ospd.sock
+
+ # init_openvas: Can not open or create log file or directory. Please check permissions of log files listed in /etc/openvas/openvas_log.conf
+ 
+ sudo chown -R _gvm._gvm /var/log/gvm
