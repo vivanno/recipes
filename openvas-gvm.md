@@ -8,8 +8,6 @@ Here is a list of commands to install GVM on Kali Linux 2021.
 
  sudo runuser -u _gvm -- gvm-manage-certs -a -f
 
- sudo runuser -u _gvm -- gvmd --user=admin --new-password=123456789
-
  sudo runuser -u _gvm -- gvmd –create-user=<UserName> –password=<Password>
 
  sudo systemctl enable redis-server@openvas.service
