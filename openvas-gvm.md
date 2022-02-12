@@ -58,9 +58,9 @@ Now you are able to access the admin page using: https://127.0.0.1:9332
 
  sudo runuser -u _gvm -- gvmd --get-users --verbose
  
- sudo runuser -u _gvm -- gvmd --get-scanners
+ sudo runuser -u _gvm -- gvmd --modify-setting 78eceaec-3385-11ea-b237-28d24461215b --value <USER-UUID>
  
- sudo runuser -u _gvm -- gvmd --modify-setting 08b69003-5fc2-4037-a479-93b440211c73 --value 68988e70-bae3-4033-b576-8022df146863
+ sudo runuser -u _gvm -- gvmd --get-scanners
  
  sudo runuser -u _gvm -- gvmd --modify-scanner 08b69003-5fc2-4037-a479-93b440211c73 --scanner-host=/run/ospd/ospd.sock
 
